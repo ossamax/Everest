@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Logo from "../public/Logo.svg";
 import heroImg from "../public/hero_image.png";
-import start from "../public/star_Vector_Mark.svg";
+import start from "../public/Star_Vector_Mark.svg";
 import aboutImg from "../public/About_Overview-image.png";
 import Link from "next/link";
 import { useState } from "react";
