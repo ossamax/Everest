@@ -109,7 +109,7 @@
   margin-top: 6rem;
   background-color: #0a071b;
   .container {
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 2rem;
     color: white;
     @media screen and (min-width: 800px) {
       display: flex;
@@ -120,7 +120,7 @@
       background-repeat: no-repeat;
       padding: 1rem;
       @media screen and (min-width: 800px) {
-        width: 50%;
+        width: 55%;
       }
       small {
         color: #bcb8d0;
@@ -129,7 +129,7 @@
         font-size: 1rem;
       }
       h1 {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-family: "Dela Gothic One", sans-serif;
         margin: 1rem 0;
         @media screen and (min-width: 700px) {
@@ -138,12 +138,12 @@
       }
       button {
         background-color: #f58859;
-        padding: 1.2rem 2rem;
+        padding: 1rem 2rem;
         border: none;
         color: white;
         font-weight: bold;
         cursor: pointer;
-        border: 10px;
+        border-radius: 5px;
         transition: 0.3s ease-in-out;
         font-family: "inter", sans-serif;
         &:hover {
@@ -173,8 +173,96 @@
       align-items: center;
       justify-content: center;
       padding-top: 3rem;
-      max-width: 500px;
+      max-width: 400px;
       margin: auto;
+    }
+  }
+}
+
+.features {
+  background-color: #0a071b;
+  .container {
+    padding: 4rem 1rem;
+    display: grid;
+    row-gap: 35px;
+    @media screen and (min-width: 700px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature {
+      font-family: "inter", sans-serif;
+      color: white;
+
+      @media screen and (min-width: 700px) {
+        text-align: center;
+      }
+      span {
+        padding: 0.3rem 0.5rem;
+        background-color: #f58859;
+        border-radius: 5px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+.about {
+  background-color: #0a071b;
+  .container {
+    padding: 4rem 1rem;
+    overflow-x: hidden;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .about_image {
+      position: relative;
+      max-width: 400px;
+      @media screen and (min-width: 800px) {
+        width: 50%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: -3rem;
+        bottom: -3rem;
+        width: 300px;
+        height: 300px;
+        background-image: url("../public/about_Image\ Accent.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+      }
+    }
+    .about_content {
+      color: white;
+      padding: 4rem 0;
+      font-family: "inter", sans-serif;
+      @media screen and (min-width: 800px) {
+        width: 45%;
+      }
+      h1 {
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 3rem;
+      }
+      p {
+        line-height: 2;
+        color: #bcb8d0;
+        margin: 2rem 0;
+      }
+      button {
+        padding: 1rem 2rem;
+        background-color: #2a263f;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-5px);
+          background-color: white;
+          color: #0a071b;
+        }
+      }
     }
   }
 }

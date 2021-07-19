@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Logo from "../public/Logo.svg";
 import heroImg from "../public/hero_image.png";
+import start from "../public/star_Vector_Mark.svg";
+import aboutImg from "../public/About_Overview-image.png";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -77,6 +79,45 @@ export default function Home() {
           </div>
           <div className={styles.hero_image}>
             <Image src={heroImg} alt="Everest hero image body" />
+          </div>
+        </div>
+      </div>
+      <div className={styles.features}>
+        <div className={styles.container}>
+          <div className={styles.feature}>
+            <span>
+              <Image src={start} alt="start svg" />
+            </span>
+            Affordable Training & Eating Plans
+          </div>
+          <div className={styles.feature}>
+            <span>
+              <Image src={start} alt="start svg" />
+            </span>
+            14 Day Free Return on Purchase
+          </div>
+          <div className={styles.feature}>
+            <span>
+              <Image src={start} alt="start svg" />
+            </span>
+            5 Star Rated Personal Trainer
+          </div>
+        </div>
+      </div>
+      <div className={styles.about}>
+        <div className={styles.container}>
+          <div className={styles.about_image}>
+            <Image src={aboutImg} alt="start svg" />
+          </div>
+          <div className={styles.about_content}>
+            <h1>About Max Ganes?</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+              et, ultrices fermentum felis pretium. Vel ut sed aliquam dictum
+              mattis faucibus. Varius eu dapibus donec amet. Mauris sit mi
+              nullam tortor.
+            </p>
+            <button>Learn more</button>
           </div>
         </div>
       </div>
