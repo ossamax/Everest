@@ -1,0 +1,180 @@
+.container {
+  width: 93%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.navigation {
+  background-color: #0a071b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  // box-shadow: 1px 0 2px white;
+  .container {
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    .nav_logo_wrp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      @media screen and (min-width: 900px) {
+        width: 50%;
+      }
+      .logo {
+        cursor: pointer;
+      }
+      .menu_burger_icon {
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: #1f1749;
+        transition: 0.3s ease-in-out;
+        @media screen and (min-width: 900px) {
+          display: none;
+        }
+        span {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: white;
+        }
+        span:nth-child(2) {
+          margin: 0.3rem 0;
+        }
+      }
+      .active_menu_burger_icon {
+        background-color: #f58859;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        span {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: white;
+        }
+        span:nth-child(2) {
+          margin: 0.3rem 0;
+        }
+      }
+      .navigation_links {
+        color: white;
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+        a {
+          margin: 0 0.6rem;
+          font-size: 0.9rem;
+          color: #bcb8d0;
+          padding: 0.8rem;
+          transition: 0.3s ease-in-out;
+          border-radius: 5px;
+          &:hover {
+            background-color: #1e1b36;
+            color: white;
+          }
+        }
+      }
+    }
+    .book_btn {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+      button {
+        padding: 1rem 2rem;
+        border: 1.5px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+        font-weight: bold;
+        border-radius: 5px;
+        &:hover {
+          color: orangered;
+          border-color: orangered;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  margin-top: 6rem;
+  background-color: #0a071b;
+  .container {
+    padding: 4rem 1rem;
+    color: white;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      align-items: center;
+    }
+    .hero_content {
+      background-image: url("../public/Accent_Grey.svg");
+      background-repeat: no-repeat;
+      padding: 1rem;
+      @media screen and (min-width: 800px) {
+        width: 50%;
+      }
+      small {
+        color: #bcb8d0;
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 2.7rem;
+        font-family: "Dela Gothic One", sans-serif;
+        margin: 1rem 0;
+        @media screen and (min-width: 700px) {
+          font-size: 4rem;
+        }
+      }
+      button {
+        background-color: #f58859;
+        padding: 1.2rem 2rem;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: 10px;
+        transition: 0.3s ease-in-out;
+        font-family: "inter", sans-serif;
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      .cta_btn {
+        margin: 2rem 0;
+        button:nth-child(2) {
+          margin-left: 0.8rem;
+          background-color: #1e1b36;
+          color: white;
+          &:hover {
+            background-color: #bcb8d0;
+            color: #0a071b;
+          }
+        }
+      }
+    }
+    .hero_image {
+      background-image: url("../public/Hero_Accent_Large.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #2a263f;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 3rem;
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+}
