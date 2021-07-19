@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "../public/Logo.svg";
 import heroImg from "../public/hero_image.png";
 import start from "../public/Star_Vector_Mark.svg";
-import aboutImg from "../public/About_Overview-image.png";
+import aboutImg from "../public/About_Overview-Image.png";
 import Link from "next/link";
 import { useState } from "react";
 
