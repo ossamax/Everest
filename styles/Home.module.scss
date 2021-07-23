@@ -52,6 +52,9 @@
         border-radius: 5px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
+        @media screen and (min-width: 900px) {
+          display: none;
+        }
         span {
           display: block;
           width: 20px;
@@ -178,7 +181,7 @@
   }
 }
 
-.features {
+.hero_features {
   background-color: #0a071b;
   .container {
     padding: 4rem 1rem;
@@ -260,6 +263,186 @@
           transform: translateY(-5px);
           background-color: white;
           color: #0a071b;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  .container {
+    padding: 4rem 1rem;
+    width: 98%;
+    @media screen and (min-width: 700px) {
+      padding: 5rem;
+    }
+    .header {
+      background-image: url("../public/Title_Accent.svg");
+      background-repeat: no-repeat;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      @media screen and (min-width: 700px) {
+        margin-left: 3rem;
+      }
+      h1 {
+        font-size: 3rem;
+        font-family: "Dela Gothic One", sans-serif;
+        margin-bottom: 1rem;
+      }
+      p {
+        line-height: 2;
+        font-size: 1.1rem;
+        color: #5b5675;
+        font-family: "inter", sans-serif;
+        max-width: 450px;
+      }
+    }
+    .services_carts {
+      margin: 4rem 0;
+      display: grid;
+      row-gap: 3rem;
+      column-gap: 3rem;
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .service {
+        font-family: "inter", sans-serif;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        max-width: 400px;
+        margin: auto;
+        &:hover {
+          transform: translateY(-5px);
+          h4 {
+            color: #f58859;
+          }
+        }
+        .service_image_1 {
+          width: 100%;
+          height: 250px;
+          background-image: url("../public/Service-1.jpeg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        .service_image_2 {
+          width: 100%;
+          height: 250px;
+          background-image: url("../public/Service-2.jpeg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        .service_image_3 {
+          width: 100%;
+          height: 250px;
+          background-image: url("../public/Service-3.jpeg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        h4 {
+          font-size: 1.4rem;
+          font-family: "Dela Gothic One", sans-serif;
+          margin: 1rem 0 0;
+          transition: 0.3s ease-in-out;
+        }
+        P {
+          line-height: 2rem;
+          font-size: 1rem;
+          color: #5b5675;
+          margin: 1rem 0;
+        }
+        .cta_wrp {
+          display: flex;
+          align-items: center;
+          color: #0a071b;
+          font-size: 0.9rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: #f58859;
+          }
+        }
+      }
+    }
+  }
+}
+
+.features {
+  background-color: #0a071b;
+  .container {
+    padding: 4rem 1rem;
+    .header {
+      color: white;
+      background-image: url("../public/Accent_Grey.svg");
+      background-repeat: no-repeat;
+      padding: 1rem 0 0 1rem;
+      @media screen and (min-width: 500px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      h1 {
+        font-size: 2.4rem;
+        font-family: "Dela Gothic One", sans-serif;
+        margin-bottom: 1rem;
+        max-width: 450px;
+        @media screen and (min-width: 500px) {
+          margin: 0;
+        }
+      }
+      button {
+        padding: 1rem 2rem;
+        background-color: #141125;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        margin-top: 1.3rem;
+        @media screen and (min-width: 500px) {
+          margin: 0;
+        }
+        &:hover {
+          transform: translateY(-5px);
+          background-color: white;
+          color: #0a071b;
+        }
+      }
+    }
+    .feature_wrp {
+      margin: 4rem 0;
+      display: grid;
+      row-gap: 3rem;
+      column-gap: 3rem;
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .ftr {
+        background-color: #141125;
+        color: white;
+        padding: 2rem;
+        font-family: "inter", sans-serif;
+        border-radius: 10px;
+        h3 {
+          font-family: "Dela Gothic One", sans-serif;
+          margin: 1rem 0;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
+        P {
+          line-height: 2;
+          color: #bcb8d0;
         }
       }
     }

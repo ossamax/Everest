@@ -5,6 +5,13 @@ import Logo from "../public/Logo.svg";
 import heroImg from "../public/hero_image.png";
 import start from "../public/Star_Vector_Mark.svg";
 import aboutImg from "../public/About_Overview-Image.png";
+import arrowOrange from "../public/Arrow_Orange.svg";
+import user from "../public/Icon_User.svg";
+import nutrition from "../public/Icon_Diet.svg";
+import experience from "../public/Icon_Shield.svg";
+import motivation from "../public/Icon_Motivation.svg";
+import training from "../public/Icon_Training.svg";
+import heart from "../public/Icon_Heart.svg";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -73,8 +80,16 @@ export default function Home() {
             <small>EVEREST TEAM</small>
             <h1>The ultimate online personal training plans!</h1>
             <div className={styles.cta_btn}>
-              <button className={styles.book_btn}>Book A Class</button>
-              <button className={styles.about_btn}>About Me</button>
+              <button className={styles.book_btn}>
+                <Link href="/contact" passHref>
+                  BooK A Class
+                </Link>
+              </button>
+              <button className={styles.about_btn}>
+                <Link href="/about" passHref>
+                  About Me
+                </Link>
+              </button>
             </div>
           </div>
           <div className={styles.hero_image}>
@@ -82,7 +97,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.features}>
+      <div className={styles.hero_features}>
         <div className={styles.container}>
           <div className={styles.feature}>
             <span>
@@ -117,7 +132,139 @@ export default function Home() {
               mattis faucibus. Varius eu dapibus donec amet. Mauris sit mi
               nullam tortor.
             </p>
-            <button>Learn more</button>
+            <Link href="/about" passHref>
+              <button>Learn more</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className={styles.services}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <h1>Services</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+              et, ultrices fermentum felis pretium.
+            </p>
+          </div>
+          <div className={styles.services_carts}>
+            <div className={styles.service}>
+              <div className={styles.service_image_1}></div>
+              <h4>Pilates Training</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+              <div className={styles.cta_wrp}>
+                <Link href="/services/pilates-training" passHref>
+                  Learn More
+                </Link>
+                <Image src={arrowOrange} alt="arrow_svg" width={25} />
+              </div>
+            </div>
+            <div className={styles.service}>
+              <div className={styles.service_image_2}></div>
+              <h4>CrossFit Training</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+              <div className={styles.cta_wrp}>
+                <Link href="/services/pilates-training" passHref>
+                  Learn More
+                </Link>
+                <Image src={arrowOrange} alt="arrow_svg" width={25} />
+              </div>
+            </div>
+            <div className={styles.service}>
+              <div className={styles.service_image_3}></div>
+              <h4>Fitness Training</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+              <div className={styles.cta_wrp}>
+                <Link href="/services/pilates-training" passHref>
+                  Learn More
+                </Link>
+                <Image src={arrowOrange} alt="arrow_svg" width={25} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.features}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <div>
+              <h1>Why choosing me as your personal trainer</h1>
+            </div>
+            <button>Book A Class</button>
+          </div>
+          <div className={styles.feature_wrp}>
+            <div className={styles.ftr}>
+              <Image
+                src={user}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>Certified trainer</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
+            <div className={styles.ftr}>
+              <Image
+                src={nutrition}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>Nutrition & diet</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
+            <div className={styles.ftr}>
+              <Image
+                src={experience}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>Years of experience</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
+            <div className={styles.ftr}>
+              <Image
+                src={motivation}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>Support & motivation</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
+            <div className={styles.ftr}>
+              <Image
+                src={training}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>1-on-1 training</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
+            <div className={styles.ftr}>
+              <Image
+                src={heart}
+                alt="user icon svg"
+                className={styles.ftr_icon}
+              />
+              <h3>Commitment</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit velitolm
+                platea libero, ultricies hendrerit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
