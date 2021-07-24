@@ -627,3 +627,85 @@
     }
   }
 }
+
+.schedule {
+  .container {
+    padding: 4rem 1rem;
+     @media screen and (min-width: 1000px) {
+        width: 95%;
+      }
+    h1 {
+      font-family: "Dela Gothic One", sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      @media screen and (min-width: 600px) {
+        font-size: 3.5rem;
+      }
+    }
+    .table_wrp {
+      font-family: "inter", sans-serif;
+      overflow: scroll;
+      @media screen and (min-width: 1000px) {
+        width: 100%;
+      }
+      .table_head {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        color: #0a071b;
+        div {
+          width: 150px;
+          padding: 2rem 0;
+          background-color: #0a071b;
+          color: white;
+          text-align: center;
+        }
+      }
+      .first {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        div {
+          width: 150px;
+          text-align: center;
+          border: 0.2px solid #dcd8f02f;
+          padding: 2rem 0;
+          small {
+            width: 100%;
+          }
+        }
+      }
+      .seconde {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+
+        div {
+          width: 150px;
+          text-align: center;
+          border: 0.2px solid #dcd8f02f;
+          padding: 1rem 0;
+          background-color: #f8f7fc;
+          small {
+            width: 100%;
+          }
+        }
+      }
+      .empty {
+        height: 100%;
+      }
+      .date {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        height: 100%;
+        span {
+          width: 100%;
+          display: block;
+          border: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

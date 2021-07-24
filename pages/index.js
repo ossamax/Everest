@@ -342,6 +342,197 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className={styles.schedule}>
+        <div className={styles.container}>
+          <h1>Classes Schedule</h1>
+          <div className={styles.table_wrp}>
+            <div className={styles.table_head}>
+              <div>Time</div>
+              <div>Monday</div>
+              <div>tuesday</div>
+              <div>wednesday</div>
+              <div>thursday</div>
+              <div>Friday</div>
+              <div>Saturday</div>
+              <div>Sunday</div>
+            </div>
+            <div className={styles.first}>
+              <div className={styles.date}>
+                <span>09:00 PM</span>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Floyd Miles</small>
+              </div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ralpha Edwards</small>
+              </div>
+              <div>
+                <strong>Yoga</strong>
+                <br />
+                <small>Leslie Alexander</small>
+              </div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Cody Fisher</small>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ronald Richards</small>
+              </div>
+            </div>
+            <div className={styles.seconde}>
+              <div className={styles.date}>
+                <span>10:00 PM</span>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Floyd Miles</small>
+              </div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ralpha Edwards</small>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Cody Fisher</small>
+              </div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div className={styles.empty}></div>
+            </div>
+            <div className={styles.first}>
+              <div className={styles.date}>
+                <span>03:00 AM</span>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ralpha Edwards</small>
+              </div>
+              <div>
+                <strong>Yoga</strong>
+                <br />
+                <small>Leslie Alexander</small>
+              </div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Cody Fisher</small>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ronald Richards</small>
+              </div>
+            </div>
+            <div className={styles.seconde}>
+              <div className={styles.date}>
+                <span>05:00 AM</span>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Floyd Miles</small>
+              </div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ralpha Edwards</small>
+              </div>
+              <div>
+                <strong>Yoga</strong>
+                <br />
+                <small>Leslie Alexander</small>
+              </div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Cody Fisher</small>
+              </div>
+
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ronald Richards</small>
+              </div>
+            </div>
+            <div className={styles.first}>
+              <div className={styles.date}>
+                <span>09:00 PM</span>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Floyd Miles</small>
+              </div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ralpha Edwards</small>
+              </div>
+              <div>
+                <strong>Yoga</strong>
+                <br />
+                <small>Leslie Alexander</small>
+              </div>
+              <div>
+                <strong>Cross Fit</strong>
+                <br />
+                <small>Esther Howard</small>
+              </div>
+              <div>
+                <strong>Pilates</strong>
+                <br />
+                <small>Cody Fisher</small>
+              </div>
+              <div className={styles.empty}></div>
+              <div>
+                <strong>Fit Body</strong>
+                <br />
+                <small>Ronald Richards</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
