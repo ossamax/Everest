@@ -12,6 +12,10 @@ import experience from "../public/Icon_Shield.svg";
 import motivation from "../public/Icon_Motivation.svg";
 import training from "../public/Icon_Training.svg";
 import heart from "../public/Icon_Heart.svg";
+import avatarCarter from "../public/Avatar_Carter.png";
+import avatarLeo from "../public/Avatar_Leo.png";
+import avatarMarlyn from "../public/Avatar_Marilyn.png";
+import accent from "../public/Hero_Accent_Large.svg";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -265,6 +269,76 @@ export default function Home() {
                 platea libero, ultricies hendrerit.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.reviews}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <div>
+              <h1>What my clients say about me?</h1>
+            </div>
+            <button>Book A Class</button>
+          </div>
+          <div className={styles.reviews_wrp}>
+            <div className={styles.review}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                habitasse arcu vulputate consectetur velit scelerisque
+              </p>
+              <div className={styles.avatar}>
+                <Image src={avatarCarter} alt="avatar review image" />
+                <div className={styles.avatar_info}>
+                  <strong>Carter Franci</strong>
+                  <small>Lost Angekes ,CA</small>
+                </div>
+              </div>
+            </div>
+            <div className={styles.review}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                habitasse arcu vulputate consectetur velit scelerisque
+              </p>
+              <div className={styles.avatar}>
+                <Image src={avatarLeo} alt="avatar review image" />
+                <div className={styles.avatar_info}>
+                  <strong>Leo Press</strong>
+                  <small>Lost Angekes ,CA</small>
+                </div>
+              </div>
+            </div>
+            <div className={styles.review}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                habitasse arcu vulputate consectetur velit scelerisque
+              </p>
+              <div className={styles.avatar}>
+                <Image src={avatarMarlyn} alt="avatar review image" />
+                <div className={styles.avatar_info}>
+                  <strong>Marilyn Dokidis</strong>
+                  <small>Lost Angekes ,CA</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.cta_section}>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h1>What are you waiting for?</h1>
+            <p>
+              Signup to our newsletter to get a free 30 day meal plan. You will
+              receive all guidance on what to eat, how to cook and how much to
+              eat.
+            </p>
+            <Link href="/contact" passHref>
+              <button>Contact Me</button>
+            </Link>
+          </div>
+          <div className={styles.svgBackground}>
+            <Image src={accent} alt="background image" />
           </div>
         </div>
       </div>

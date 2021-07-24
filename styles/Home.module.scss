@@ -288,6 +288,7 @@
         font-size: 3rem;
         font-family: "Dela Gothic One", sans-serif;
         margin-bottom: 1rem;
+        color: #0a071b;
       }
       p {
         line-height: 2;
@@ -352,6 +353,7 @@
           font-family: "Dela Gothic One", sans-serif;
           margin: 1rem 0 0;
           transition: 0.3s ease-in-out;
+          color: #0a071b;
         }
         P {
           line-height: 2rem;
@@ -393,6 +395,7 @@
         font-family: "Dela Gothic One", sans-serif;
         margin-bottom: 1rem;
         max-width: 450px;
+
         @media screen and (min-width: 500px) {
           margin: 0;
         }
@@ -444,6 +447,182 @@
           line-height: 2;
           color: #bcb8d0;
         }
+      }
+    }
+  }
+}
+
+.reviews {
+  background-color: white;
+  .container {
+    padding: 6rem 0rem;
+
+    .header {
+      background-image: url("../public/Title_Accent.svg");
+      background-repeat: no-repeat;
+      padding: 1rem 0 0 1rem;
+
+      @media screen and (min-width: 500px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 80%;
+        margin: auto;
+      }
+      h1 {
+        font-size: 2.4rem;
+        font-family: "Dela Gothic One", sans-serif;
+        margin-bottom: 1rem;
+        max-width: 450px;
+        color: #0a071b;
+        @media screen and (min-width: 500px) {
+          margin: 0;
+        }
+      }
+      button {
+        padding: 1rem 2rem;
+        background-color: #141125;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        margin-top: 1.3rem;
+        @media screen and (min-width: 500px) {
+          margin: 0;
+        }
+        &:hover {
+          transform: translateY(-5px);
+          background-color: #f58859;
+          color: white;
+        }
+      }
+    }
+    .reviews_wrp {
+      margin: 4rem 0;
+      padding: 4rem 0;
+      position: relative;
+      display: grid;
+      row-gap: 3rem;
+      column-gap: 3rem;
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 6rem 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        background-color: #f8f7fc;
+        z-index: 1;
+        top: 0;
+        left: 10%;
+        right: 10%;
+        bottom: 0;
+      }
+      .review {
+        box-shadow: 52px 52px 72px -24px #55557c14;
+        border-radius: 5px;
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+        background-color: white;
+        font-family: "inter", sans-serif;
+        p {
+          line-height: 2;
+          font-size: 1rem;
+          color: #0a071b;
+        }
+        .avatar {
+          display: flex;
+          align-items: center;
+          margin-top: 2rem;
+          img {
+            width: 50px;
+          }
+          .avatar_info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+
+            strong {
+              color: #0a071b;
+              margin-bottom: 0.5rem;
+            }
+            small {
+              color: #5b5675;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cta_section {
+  margin-bottom: 8rem;
+  .container {
+    background-color: #0a071b;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    position: relative;
+    @media screen and (min-width: 600px) {
+      padding: 4rem;
+    }
+    @media screen and (min-width: 900px) {
+      width: 80%;
+      margin: auto;
+    }
+    .content {
+      color: white;
+      position: relative;
+      z-index: 2;
+      max-width: 450px;
+      h1 {
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 2.5rem;
+        @media screen and (min-width: 600px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        color: #bcb8d0;
+        line-height: 2;
+        margin: 2rem 0;
+      }
+      button {
+        padding: 1rem 2rem;
+        background-color: #f58859;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        margin-top: 1.3rem;
+        @media screen and (min-width: 500px) {
+          margin: 0;
+        }
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+    .svgBackground {
+      position: absolute;
+      width: 150px;
+      height: auto;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      @media screen and (min-width: 600px) {
+        width: 40%;
       }
     }
   }
