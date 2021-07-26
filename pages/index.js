@@ -16,6 +16,8 @@ import avatarCarter from "../public/Avatar_Carter.png";
 import avatarLeo from "../public/Avatar_Leo.png";
 import avatarMarlyn from "../public/Avatar_Marilyn.png";
 import accent from "../public/Hero_Accent_Large.svg";
+import instagram from "../public/Instagram_White.svg";
+import post1 from "../public/instagram1.jpeg";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -74,7 +76,9 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.book_btn}>
-            <button>Book Class</button>
+            <Link href="/contact" passHref>
+              <button>Book Class</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -528,6 +532,91 @@ export default function Home() {
                 <strong>Fit Body</strong>
                 <br />
                 <small>Ronald Richards</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.fqa}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <h1>Frequently Asked Questions</h1>
+          </div>
+          <div className={styles.fqa_wrp}>
+            <div>
+              <h2>Can your program be taken online?</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h2>Can your program be taken online?</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h2>Can your program be taken online?</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h2>Can your program be taken online?</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <div>
+              <h2>Can your program be taken online?</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.socila_media}>
+        <div className={styles.container}>
+          <h1>Follow me on Instagram</h1>
+          <div className={styles.insta_images}>
+            <div className={styles.insta_image1}>
+              <div className={styles.overlay}>
+                <div className={styles.icon}>
+                  <Image src={instagram} alt="instagram icon" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.insta_image2}>
+              <div className={styles.overlay}>
+                <div className={styles.icon}>
+                  <Image src={instagram} alt="instagram icon" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.insta_image3}>
+              <div className={styles.overlay}>
+                <div className={styles.icon}>
+                  <Image src={instagram} alt="instagram icon" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.insta_image4}>
+              <div className={styles.overlay}>
+                <div className={styles.icon}>
+                  <Image src={instagram} alt="instagram icon" />
+                </div>
               </div>
             </div>
           </div>
