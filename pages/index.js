@@ -17,7 +17,6 @@ import avatarLeo from "../public/Avatar_Leo.png";
 import avatarMarlyn from "../public/Avatar_Marilyn.png";
 import accent from "../public/Hero_Accent_Large.svg";
 import instagram from "../public/Instagram_White.svg";
-import post1 from "../public/instagram1.jpeg";
 import Link from "next/link";
 import { useState } from "react";
 
