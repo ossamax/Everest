@@ -591,34 +591,43 @@ export default function Home() {
         <div className={styles.container}>
           <h1>Follow me on Instagram</h1>
           <div className={styles.insta_images}>
-            <div className={styles.insta_image1}>
-              <div className={styles.overlay}>
-                <div className={styles.icon}>
-                  <Image src={instagram} alt="instagram icon" />
+            <Link href="https://www.instagram.com" passHref>
+              <div className={styles.insta_image1}>
+                <div className={styles.overlay}>
+                  <div className={styles.icon}>
+                    <Image src={instagram} alt="instagram icon" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.insta_image2}>
-              <div className={styles.overlay}>
-                <div className={styles.icon}>
-                  <Image src={instagram} alt="instagram icon" />
+            </Link>
+
+            <Link href="https://www.instagram.com" passHref>
+              <div className={styles.insta_image2}>
+                <div className={styles.overlay}>
+                  <div className={styles.icon}>
+                    <Image src={instagram} alt="instagram icon" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.insta_image3}>
-              <div className={styles.overlay}>
-                <div className={styles.icon}>
-                  <Image src={instagram} alt="instagram icon" />
+            </Link>
+            <Link href="https://www.instagram.com" passHref>
+              <div className={styles.insta_image3}>
+                <div className={styles.overlay}>
+                  <div className={styles.icon}>
+                    <Image src={instagram} alt="instagram icon" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.insta_image4}>
-              <div className={styles.overlay}>
-                <div className={styles.icon}>
-                  <Image src={instagram} alt="instagram icon" />
+            </Link>
+            <Link href="https://www.instagram.com" passHref>
+              <div className={styles.insta_image4}>
+                <div className={styles.overlay}>
+                  <div className={styles.icon}>
+                    <Image src={instagram} alt="instagram icon" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

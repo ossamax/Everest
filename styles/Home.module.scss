@@ -752,16 +752,25 @@
 
 .socila_media {
   .container {
+    width: 97%;
+    padding-bottom: 4rem;
     h1 {
       font-family: "Dela Gothic One", sans-serif;
       font-size: 2.5rem;
       margin-bottom: 4rem;
       text-align: center;
       @media screen and (min-width: 600px) {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
     }
     .insta_images {
+      display: grid;
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
       .insta_image1,
       .insta_image2,
       .insta_image3,
@@ -773,6 +782,9 @@
         border-radius: 5px;
         overflow: hidden;
         cursor: pointer;
+        @media screen and (min-width: 700px) {
+          height: 400px;
+        }
         &:hover {
           .overlay {
             opacity: 1;
