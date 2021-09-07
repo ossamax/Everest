@@ -630,7 +630,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className={styles.footer}>
+      <div className={styles.footer}>
         <div className={styles.container}>
           <Link href="/" className={styles.logo} passHref>
             <div className={styles.logo}>
@@ -653,7 +653,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.rights}>@ All right are reserved 2021</div>
-      </footer>
+      </div>
     </>
   );
 }
