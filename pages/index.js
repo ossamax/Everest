@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
@@ -63,13 +63,13 @@ export default function Home() {
               <Link href="/">
                 <a>Home</a>
               </Link>
-              <Link href="/about">
+              <Link href="/">
                 <a>About</a>
               </Link>
-              <Link href="/services">
+              <Link href="/">
                 <a>Services</a>
               </Link>
-              <Link href="/contact">
+              <Link href="/">
                 <a>Contact</a>
               </Link>
             </div>
@@ -630,6 +630,30 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <div className={styles.container}>
+          <Link href="/" className={styles.logo} passHref>
+            <div className={styles.logo}>
+              <Image src={Logo} alt="Everest logo" />
+            </div>
+          </Link>
+          <div className={styles.navigation_links}>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+            <Link href="/services">
+              <a>Services</a>
+            </Link>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </div>
+        </div>
+        <div className={styles.rights}>@ All right are reserved 2021</div>
+      </footer>
     </>
   );
 }
