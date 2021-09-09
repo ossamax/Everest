@@ -59,7 +59,13 @@ export default function Home() {
               <span></span>
               <span></span>
             </div>
-            <div className={styles.navigation_links}>
+            <div
+              className={
+                !active
+                  ? styles.active_navigation_links
+                  : styles.navigation_links
+              }
+            >
               <Link href="/">
                 <a>Home</a>
               </Link>
