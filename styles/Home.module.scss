@@ -82,6 +82,7 @@
           z-index: 1;
           padding: 2rem;
           transform: translateY(-200%);
+          border-radius: 10px;
           a {
             color: #1f1749 !important;
             margin: 1rem 0;
@@ -118,6 +119,7 @@
         transition: 0.3s ease-in-out;
         z-index: 1;
         padding: 2rem;
+        border-radius: 10px;
         animation: mobileNavActive 1s ease-in-out forwards;
         a {
           color: #1f1749 !important;

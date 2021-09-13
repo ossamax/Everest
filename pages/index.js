@@ -94,12 +94,12 @@ export default function Home() {
             <h1>The ultimate online personal training plans!</h1>
             <div className={styles.cta_btn}>
               <button className={styles.book_btn}>
-                <Link href="/contact" passHref>
+                <Link href="/" passHref>
                   BooK A Class
                 </Link>
               </button>
               <button className={styles.about_btn}>
-                <Link href="/about" passHref>
+                <Link href="/" passHref>
                   About Me
                 </Link>
               </button>
